@@ -32,6 +32,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
+    private var gameResult: GameResult = .lost
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.registerForKeyboardNotifications()
@@ -46,9 +48,29 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 }
 
+//MARK: Textfields
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return false
+    }
+    
+    private func getInputPosition() -> SCNVector3? {
+        guard let xPosString = self.xTextField.text,
+            let yPosString = self.yTextField.text,
+            let zPosString = zTextField.text,
+            let xPosFloat = Float(xPosString),
+            let yPosFloat = Float(yPosString),
+            let zPosFloat = Float(zPosString) else {
+                print("Wrong input")
+                return nil
+        }
+        return SCNVector3Make(xPosFloat, yPosFloat, zPosFloat)
+    }
+    
+    private func clearInput() {
+        [self.xTextField,
+         self.yTextField,
+         self.zTextField].forEach{ $0?.text = nil }
     }
 }

@@ -20,6 +20,7 @@
 		B6622F1A208F1C6000BBD784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6622F18208F1C6000BBD784 /* Main.storyboard */; };
 		B6622F1F208F1C6200BBD784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6622F1D208F1C6200BBD784 /* LaunchScreen.storyboard */; };
 		B6622F28208F356100BBD784 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6622F27208F356100BBD784 /* Localizable.strings */; };
+		B6D0DB4720A24B1000BC3759 /* Tesseract+ArraySCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0DB4620A24B1000BC3759 /* Tesseract+ArraySCNNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B6622F20208F1C6200BBD784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6622F27208F356100BBD784 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B6622F2A208F358800BBD784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D0DB4620A24B1000BC3759 /* Tesseract+ArraySCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tesseract+ArraySCNNode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B60299FD208F4A70000EC3DC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B6D0DB4620A24B1000BC3759 /* Tesseract+ArraySCNNode.swift */,
 				B60299FE208F4A97000EC3DC /* KeyboardNotifications+UIViewController.swift */,
 				B6029A03208FAC0C000EC3DC /* Localize+String.swift */,
 			);
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6029A09208FB7A0000EC3DC /* EndGameAlertViewController.swift in Sources */,
+				B6D0DB4720A24B1000BC3759 /* Tesseract+ArraySCNNode.swift in Sources */,
 				B6029A04208FAC0C000EC3DC /* Localize+String.swift in Sources */,
 				B6029A0B208FC1B7000EC3DC /* EndGameAlert+UIViewController.swift in Sources */,
 				B6029A0D208FC343000EC3DC /* Colors.swift in Sources */,
